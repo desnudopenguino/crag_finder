@@ -30,7 +30,7 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
  
  5.3 Set Thin server defaults: sudo /usr/sbin/update-rc.d -f thin defaults
  
- 5.4 Create default Thin config file: sudo thin config -C /etc/thin/myapp.example.com -c /var/www/myapp.example.com --servers 3 -e development # (or: -e production for caching, etc)
+ 5.4 Create default Thin config file: sudo thin config -C /etc/thin/myapp.example.com -c /var/www/myapp.example.com --servers 3 -e development # (or: -e production for caching, etc. change myapp.example.com to whatever you want)
 
 
 # Useful Links
