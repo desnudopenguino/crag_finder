@@ -4,6 +4,8 @@ A web app designed for helping rock climbers identify and locate potential outdo
 # Installation & Notes
 This section describes the installation process so that installation can be repeated. These are the steps taken from guides/docs all over the internet consolidated into one guide to ensure repeatability, and remove the need to go hunt down directions/configs in the future.
 
+The Rails App name is myapp.example.com.
+
 The initial installation/version will be running on a Debian VM in VirtualBox.
 
 1 Create your environment, make sure things are up to date: sudo apt-get update
@@ -21,6 +23,22 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
  4.3 Instal rails: sudo gem install rails
  
  4.4 Add rails to your PATH: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/var/lib/gems/VERSION/bin" # (VERSION is the version of Ruby being used)
+ 
+ 4.5 Create Rails app: 
+ 
+  4.5.1 cd /var/www
+  
+  4.5.2 rails new myapp.example.com
+  
+  4.5.3 At this point, the app crashes due to a missing javaScript runtime environment, so add one
+  
+   4.5.3.1 Edit the Gemfile, adding the following lines to the end of the file:
+   
+   gem 'execjs'
+   
+   gem 'therubyracer'
+  
+  4.5.4 Bundle the gems for the app: bundle install
 
 5 Configure Rails and NGINX to work well together:
 
@@ -30,8 +48,13 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
  
  5.3 Set Thin server defaults: sudo /usr/sbin/update-rc.d -f thin defaults
  
- 5.4 Create default Thin config file: sudo thin config -C /etc/thin/myapp.example.com -c /var/www/myapp.example.com --servers 3 -e development # (or: -e production for caching, etc. change myapp.example.com to whatever you want)
+ 5.4 Create default Thin config file: sudo thin config -C /etc/thin/myapp.example.com -c /var/www/myapp.example.com --servers 3 -e development # (or: -e production for caching, etc.)
 
+6 Restart the server daemons:
+
+ 6.1 Restart thin: /etc/init.d/thin restart
+ 
+ 6.2 Restart NGINX: sudo /etc/init.d/nginx reload
 
 # Useful Links
 NGINX Beginner's Guide: http://nginx.org/en/docs/beginners_guide.html
