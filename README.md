@@ -6,13 +6,19 @@ This section describes the installation process so that installation can be repe
 
 The initial installation/version will be running on a Debian VM in VirtualBox.
 
-Step 1. Create your environment
+1. Create your environment, make sure things are up to date: sudo apt-get update
 
-Step 2. Install NGINX (web server): sudo apt-get install nginx
+2. Install NGINX (web server): sudo apt-get install nginx
 
-Step 3. Install PostgreSQL:
+3. Install PostgreSQL: sudo apt-get install postgresql
 
-Step 4. Install Ruby on Rails:
+4. Install Ruby on Rails:
+
+ 4.1. Install Ruby and other useful bits: sudo apt-get install ruby rdoc ruby-dev libopenssl-ruby rubygems
+ 
+ 4.2 Install fastthread: sudo gem install fastthread
+ 
+ 4.3 Instal rails: sudo gem install rails
 
 
 # Useful Links
