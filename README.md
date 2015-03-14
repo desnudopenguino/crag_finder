@@ -1,4 +1,4 @@
-# rock_finder
+# Rock Finder
 A web app designed for helping rock climbers identify and locate potential outdoor climbing areas based on geographic and geologic data.
 
 # Installation & Notes
