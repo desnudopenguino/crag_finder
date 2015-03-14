@@ -7,8 +7,11 @@ This section describes the installation process so that installation can be repe
 The initial installation/version will be running on a Debian VM in VirtualBox.
 
 Step 1. Create your environment
+
 Step 2. Install NGINX (web server): sudo apt-get install nginx
+
 Step 3. Install PostgreSQL:
+
 Step 4. Install Ruby on Rails:
 
 
