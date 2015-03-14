@@ -60,7 +60,7 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
  
  6.1b Start the service using the thin config file: thin start
  
- 6.2 Restart NGINX: sudo /etc/init.d/nginx reload
+ 6.2 Restart NGINX to load the new config: sudo /etc/init.d/nginx reload
 
 # Useful Links
 NGINX Beginner's Guide: http://nginx.org/en/docs/beginners_guide.html
