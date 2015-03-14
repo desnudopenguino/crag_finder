@@ -10,6 +10,8 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
 
 1 Create your environment, make sure things are up to date: sudo apt-get update
 
+ 1.1 If you are using VirtualBox, make sure your network is set to bridged to allow the VM to be accessible from the host/other places
+
 2 Install NGINX (web server): sudo apt-get install nginx
 
 3 Install PostgreSQL: sudo apt-get install postgresql
