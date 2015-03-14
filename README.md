@@ -22,7 +22,7 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
  
  4.4 Add rails to your PATH: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/var/lib/gems/VERSION/bin" # (VERSION is the version of Ruby being used)
 
-5. Configure Rails and NGINX to work well together:
+5 Configure Rails and NGINX to work well together:
 
  5.1 Get the gem for the Rails HTTP server of choice (Thin used here): sudo gem install thin 
 
