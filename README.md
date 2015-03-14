@@ -49,10 +49,14 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
  5.3 Set Thin server defaults: sudo /usr/sbin/update-rc.d -f thin defaults
  
  5.4 Create default Thin config file: sudo thin config -C /etc/thin/myapp.example.com -c /var/www/myapp.example.com --servers 3 -e development # (or: -e production for caching, etc.)
+ 
+ 5.5 Add Thin to the Gemfile: 
+ 
+ gem 'thin'
 
-6 Restart the server daemons:
+6 Restart/start the server daemons:
 
- 6.1 Restart thin: /etc/init.d/thin restart
+ 6.1 Start the rails service (cd into /var/www/myapp.example.com): rails s
  
  6.2 Restart NGINX: sudo /etc/init.d/nginx reload
 
