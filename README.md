@@ -56,7 +56,9 @@ The initial installation/version will be running on a Debian VM in VirtualBox.
 
 6 Restart/start the server daemons:
 
- 6.1 Start the rails service (cd into /var/www/myapp.example.com): rails s
+ 6.1a Start the rails service (cd into /var/www/myapp.example.com): rails s
+ 
+ 6.1b Start the service using the thin config file: thin start
  
  6.2 Restart NGINX: sudo /etc/init.d/nginx reload
 
