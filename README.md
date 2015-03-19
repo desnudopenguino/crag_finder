@@ -1,7 +1,7 @@
 # Rock Finder
 A web app designed for helping rock climbers identify and locate potential outdoor climbing areas based on geographic and geologic data.
 
-rockfinder.buckytownsend.me
+Live implementation: http://rockfinder.buckytownsend.me
 
 # Installation & Notes
 This section describes the installation process so that installation can be repeated. These are the steps taken from guides/docs all over the internet consolidated into one guide to ensure repeatability, and remove the need to go hunt down directions/configs in the future.
